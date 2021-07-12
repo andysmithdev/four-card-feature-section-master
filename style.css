@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --verydarkblue: hsl(234, 12%, 34%);
+    --grayishblue: hsl(229, 6%, 66%);
+    --verylightgray: hsl(0, 0%, 98%);
+}
+
+/* var(--blue); */
+
+body {
+   /* padding: 40px; */
+   font-family: 'Poppins', sans-serif;
+   color: var(--verydarkblue);
+   background-color: var(--verylightblue);
+}
+
+p {
+    line-height: 25px;
+}
+
+main {
+    /* box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05); */
+    margin: auto;
+    padding: 40px;
+    width: auto;
+    /*width: 325px;*/
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 5px;
+    border-top-style: solid;
+}
+
+.card::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card object {
+    float: right;
+    padding-top: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.supervisor {
+    border-color: var(--cyan);
+}
+
+.team {
+    border-color: var(--red);
+}
+
+.karma {
+    border-color: var(--orange);
+}
+
+.calc {
+    border-color: var(--blue);
+}
