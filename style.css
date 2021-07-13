@@ -50,8 +50,16 @@ h3 {
     font-size: 14px;
     font-weight: 200;
     text-align: center;
-    margin: 10px;
+    margin: auto;
+    margin-top: 15px;
+    max-width: 420px;
     margin-bottom: 50px;
+}
+
+.card-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 'supervisor' 'team' 'karma' 'calc';
 }
 
 .card {
@@ -59,10 +67,14 @@ h3 {
     box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
     border-top: 5px;
     border-top-style: solid;
+    max-width: 280px;
+    height: 180px;
 }
 
 .card::after {
@@ -91,17 +103,30 @@ p {
 }
 
 .supervisor {
+    grid-area: supervisor;
     border-color: var(--cyan);
+    align-self: center;
 }
 
 .team {
+    grid-area: team;
     border-color: var(--red);
 }
 
 .karma {
+    grid-area: karma;
     border-color: var(--orange);
 }
 
 .calc {
+    grid-area: calc;
     border-color: var(--blue);
+    align-self: center;
+}
+
+@media (min-width: 1000px) {
+    .card-grid {
+                 grid-template-areas: 'supervisor team calc'
+                                       'supervisor karma calc';
+               }
 }
