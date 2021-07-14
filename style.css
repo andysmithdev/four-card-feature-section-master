@@ -11,10 +11,7 @@
     --verylightgray: hsl(0, 0%, 98%);
 }
 
-/* var(--blue); */
-
 body {
-   /* padding: 40px; */
    font-family: 'Poppins', sans-serif;
    color: var(--verydarkblue);
    background-color: var(--verylightblue);
@@ -25,11 +22,9 @@ p {
 }
 
 main {
-    /* box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05); */
     margin: auto;
     padding: 40px;
     width: auto;
-    /*width: 325px;*/
 }
 
 h1 {
